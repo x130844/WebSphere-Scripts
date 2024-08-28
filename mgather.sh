@@ -26,13 +26,13 @@ echo ""
 echo "Current working directory:"
 printf "$mycwd"|uniq
 echo ""
-echo "Environment for that process:"
+echo "Environment variables for that process:"
 printf "$myenv"|uniq
 echo ""
-echo "command line arguments for that process:"
+echo "Command line arguments for that process:"
 echo "$mycmdline"|uniq
 echo ""
-echo "ulimits for that process:"
+echo "ulimits values for that process:"
 printf "$myulimit"|sort|uniq
 echo ""
 
