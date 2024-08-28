@@ -1,3 +1,4 @@
+#!/bin/bash
 #echo ""
 #echo "Mustgather Info about process: $1"
 if [ "$(pidof $1)" == "" ]
