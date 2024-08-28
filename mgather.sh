@@ -7,7 +7,7 @@ then
 	exit
 fi
 
-echo $(pidof $1)
+#echo $(pidof $1)
 for mypid in $(pidof $1); 
 do 
 	mypath="$(readlink /proc/$mypid/exe)\n$mypath"
