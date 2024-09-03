@@ -64,7 +64,7 @@ printf "$myowner"|sort|uniq
 
 printf "$sepline"
 
-echo "Current user running this script and its variables (not related to $1)"
+echo "Current user's printenv output:"
 printenv
 printf "$sepline"
 
