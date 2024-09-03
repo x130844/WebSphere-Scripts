@@ -6,12 +6,14 @@ sepline="\n"
 printf "$sepline"
 printf "$sepline"
 
-echo "Mustgather Info about process: \"$1\""
+
 if [ "$(pidof $1)" == "" ]
 then
-        echo "\'$1\' process not found, if you're looking for Liberty or WebSphere, use 'java' for the process "
+        echo "'$1' process not found, if you're looking for Liberty or WebSphere, use 'java' for the process "
         exit
 fi
+
+echo "Mustgather Info about process: \"$1\""
 
 for mypid in $(pidof $1);
 do
