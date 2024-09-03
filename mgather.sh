@@ -63,3 +63,8 @@ echo "Owner(s) for $1 session(s):"
 printf "$myowner"|sort|uniq
 
 printf "$sepline"
+
+echo "Current user running this script and its variables (not related to $1)"
+printenv
+printf "$sepline"
+
