@@ -4,8 +4,9 @@
 sepline="\n"
 sepline2="##------------------------------------------------------------------------------------------------##\n"
 
+printf "$sepline"
 printf "$sepline2"
-
+printf "$sepline"
 echo "Mustgather Info about process: \"$1\""
 if [ "$(pidof $1)" == "" ]
 then
