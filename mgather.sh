@@ -6,7 +6,7 @@ septline2="##-------------------------------------------------------------------
 
 printf "$sepline2"
 
-echo "Mustgather Info about process: \"$1\""
+echo "Mustgatherzzzz Info about process: \"$1\""
 if [ "$(pidof $1)" == "" ]
 then
         echo "$1 process not found"
