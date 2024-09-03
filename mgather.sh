@@ -2,11 +2,11 @@
 #
 #
 sepline="\n"
-septline2="##------------------------------------------------------------------------------------------------##\n"
+sepline2="##------------------------------------------------------------------------------------------------##\n"
 
 printf "$sepline2"
 
-echo "Mustgatherzzzz Info about process: \"$1\""
+echo "Mustgather Info about process: \"$1\""
 if [ "$(pidof $1)" == "" ]
 then
         echo "$1 process not found"
