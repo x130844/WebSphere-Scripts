@@ -2,6 +2,7 @@
 #
 #
 sepline="\n"
+septline2="##------------------------------------------------------------------------------------------------##\n"
 
 echo "Mustgather Info about process: \"$1\""
 if [ "$(pidof $1)" == "" ]
@@ -21,6 +22,7 @@ do
         myowner="$(ps -o user= -p $mypid )\n$myowner"
 done
 
+printf "$sepline2"
 printf "$sepline"
 
 echo "Current user's printenv output:"
@@ -64,7 +66,7 @@ printf "$mypath"|uniq
 
 printf "$sepline"
 
-echo "Current working dir(s) for $1 :"
+echo "Current working dir(s) for $1:"
 printf "$mycwd"|uniq
 
 printf "$sepline"
