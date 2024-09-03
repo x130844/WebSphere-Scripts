@@ -38,7 +38,7 @@ printf "$myenv"|uniq
 
 printf "$sepline"
 
-echo "Command line arguments for $1:"
+echo "Command line arguments for active $1:"
 printf "$mycmdline"|sort|uniq
 
 printf "$sepline"
