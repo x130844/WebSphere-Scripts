@@ -5,7 +5,6 @@ sepline="\n"
 
 printf "$sepline"
 printf "$sepline"
-printf "$sepline"
 
 echo "Mustgather Info about process: \"$1\""
 if [ "$(pidof $1)" == "" ]
