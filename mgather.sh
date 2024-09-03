@@ -23,7 +23,7 @@ done
 
 printf "$sepline"
 
-echo "Actual binary Path(s) for $1:"
+echo "Real binary Path(s) for active $1:"
 printf "$mypath"|uniq
 
 printf "$sepline"
