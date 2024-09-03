@@ -23,17 +23,12 @@ done
 
 printf "$sepline"
 
-echo "Real binary Path(s) for active $1:"
-printf "$mypath"|uniq
+echo "Current user's printenv output:"
+printenv
 
 printf "$sepline"
 
-echo "Current working dir(s) for $1 :"
-printf "$mycwd"|uniq
-
-printf "$sepline"
-
-echo "Environment variables for $1:"
+echo "Environment variables for active $1:"
 printf "$myenv"|uniq
 
 printf "$sepline"
@@ -64,7 +59,15 @@ printf "$myowner"|sort|uniq
 
 printf "$sepline"
 
-echo "Current user's printenv output:"
-printenv
+echo "Real binary Path(s) for active $1:"
+printf "$mypath"|uniq
+
 printf "$sepline"
+
+echo "Current working dir(s) for $1 :"
+printf "$mycwd"|uniq
+
+printf "$sepline"
+
+
 
