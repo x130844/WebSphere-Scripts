@@ -4,6 +4,8 @@
 sepline="\n"
 septline2="##------------------------------------------------------------------------------------------------##\n"
 
+printf "$sepline2"
+
 echo "Mustgather Info about process: \"$1\""
 if [ "$(pidof $1)" == "" ]
 then
@@ -22,7 +24,6 @@ do
         myowner="$(ps -o user= -p $mypid )\n$myowner"
 done
 
-printf "$sepline2"
 printf "$sepline"
 
 echo "Current user's printenv output:"
