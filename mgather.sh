@@ -1,6 +1,13 @@
 #!/bin/bash
+# 
+# Written by Frederic Fouche 2024
+# this script gathers basic info about the runtime related to the process passed as argument. 
+# Usage: 
+# curl -sSL https://raw.githubusercontent.com/x130844/WebSphere-Scripts/main/mgather.sh |bash -s -- processname
+# Example, for Liberty:
+# curl -sSL https://raw.githubusercontent.com/x130844/WebSphere-Scripts/main/mgather.sh |bash -s -- java
 #
-#
+
 sepline="\n"
 
 printf "$sepline"
