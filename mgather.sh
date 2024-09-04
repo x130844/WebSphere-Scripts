@@ -6,6 +6,11 @@ sepline="\n"
 printf "$sepline"
 printf "$sepline"
 
+if [ "$(uname)" != "Linux" ]
+then
+        echo "Script only compatible with Linux"
+        exit
+fi
 
 if [ "$(pidof $1)" == "" ]
 then
